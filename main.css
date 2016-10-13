@@ -1,0 +1,14 @@
+img {
+    max-width: 100%;
+}
+
+body {
+  background: #EEEEEE;
+  text-align: center;
+}
+
+footer {
+  background: #4B484F;
+  color: #FFFFFF;
+  padding: 2em;
+}
