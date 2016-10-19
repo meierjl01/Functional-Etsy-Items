@@ -20,7 +20,7 @@ var avg = returnPrice/items.length;
 
 console.log(avg);
 
-$($div1).text('The average price is $23.63');
+$($div1).text('The average price is $' + avg);
 
 
 //Answer 2
@@ -35,7 +35,7 @@ var filteredItem = items.filter(function(item) {
 ;
 console.log(filteredItem);
 
-$($div2).text('1970s Coors Banquet Glass Beer Pitcher' + 'The Three Broomsticks Customizable Beer Stein Mug, Harry Potter Inspired, hogsmeade village, harry potter gift, three broomsticks mug' + 'Hand Painted Colorful Feather Glass');
+$($div2).text(filteredItem);
 
 
 //Answer 3
@@ -60,7 +60,7 @@ var filteredCC = items.filter(function(item, i, arr) {
 
 console.log(filteredCC);
 
-$($div3).text('1970s Schlitz Malt Liquor Glass Beer Pitcher costs £18');
+$($div3).text(filteredCC+ filteredCurrencyCode);
 
 
 //Answer 4
@@ -74,7 +74,7 @@ var woodItems = items.filter(function(item, i, arr) {
 });
 console.log(woodItems);
 
-$($div4).text('SALE Mid Century Siesta Ware White Mug with Anchor - Set of 3 is made of wood.' + 'Bottle cap catcher personalized. Man cave gift for him- Wooden Beer pub sign - Groomsmen wedding Gift is made of wood.' + 'Medium Size, Welcome To Our Firepit-Where Friends And Marshmallows Get Toasted At The Same Time-Painted Wood Sign-Custom Colors is made of wood.' + 'Magnetic Wall Mount Bottle Opener Barware Set - Stainless Steel or Black - Personalized if you like! is made of wood.' + 'Engraved Pocket Knife, Personalized Groomsmen Gift, Ring Bearer Gift, Graduation Gift, 4 Knives is made of wood.');
+$($div4).text(woodItems);
 
 
 //Answer 5
@@ -98,7 +98,7 @@ var complexMaterials = items.filter(function(item, i, arr) {
 console.log(numMaterials);
 console.log(complexMaterials);
 
-$($div5).text('Qty of 2 Groomsmen Gift - Stainless Steel Personalized Bottle Opener - NO Capcatcher has 9 materials: wall mount bottle opener, wedding, man cave, christmas gift, guy gift, fathers day, home bar, beer, bar.' + 'The Three Broomsticks Customizable Beer Stein Mug, Harry Potter  Inspired, hogsmeade village, harry potter gift, three broomsticks mug  has 13 materials: glass, sandblast cabinet, vinyl, beer glass, pint glass, etched pint glass, etched glass, etched beer glass, 16 oz pint, beer gift, etched harry potter glass, the three broomsticks glass, personalized harry potter glass');
+$($div5).text(numMaterials + complexMaterials);
 
 //Answer 6
 
@@ -111,8 +111,9 @@ var bySellers = items.filter(function(item,i, arr) {
 });
 
 console.log(bySellers.length);
+
 var bySeller = bySellers.length;
 
 console.log(bySeller);
 
-$($div6).text('18 were made by their sellers');
+$($div6).text(bySeller +' were made by their sellers');
